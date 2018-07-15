@@ -33,7 +33,7 @@ end
 
 def list(songs)
   songs.each_with_index do |song, i|
-    puts (i+1).to_s + "." + song
+    puts (i+1).to_s + ". " + song
 end
 
 def exit_jukebox
