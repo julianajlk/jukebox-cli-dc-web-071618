@@ -27,8 +27,12 @@ def help
   puts "- exit : exits this program"
 end
 
-def play
-
+def play(songs)
+  puts "Please enter a song name or number:"
+  response = gets.chomp
+  songs.each_with_index do |song, i|
+  if response == (i+1).to_s || user_response == song
+    return "Playing #{song}"
 end
 
 def list(songs)
